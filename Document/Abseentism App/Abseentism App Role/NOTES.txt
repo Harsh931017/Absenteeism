@@ -1,0 +1,14 @@
+Need new screen for cellmember for change password
+Four parameters need to pass in the APIs
+Card number
+Previous Password
+New Password
+Confirm Password
+
+Allocation screen for the supervisor 
+Cellmember dropdown
+department dropdown
+Station dropdown based on the department
+Shift Dropdown
+
+Allocate button

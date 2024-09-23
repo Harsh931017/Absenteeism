@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AbsenteeismAPI</name>
+    </assembly>
+    <members>
+        <member name="M:Absenteeism.Controllers.MasterController.Register(Absenteeism.Models.Input.InputUserRegister)">
+            <summary>
+            Submit the Register
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Absenteeism.Controllers.MasterController.Login(Absenteeism.Models.Input.UserRegisterDto)">
+            <summary>
+            Login 
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Absenteeism.Controllers.MasterController.GetRoles(System.Int32)">
+            <summary>
+            Get Roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Absenteeism.Controllers.MasterController.GetShift(System.Int32)">
+            <summary>
+            Get Shift (Supervisor)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Absenteeism.Controllers.MasterController.GetCellMember(System.Int32)">
+            <summary>
+            Get Cell Member Based Upon PlantId(Supervisor)
+            </summary>
+            <param name="PlantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Absenteeism.Controllers.MasterController.GetDepartment(System.Int32)">
+            <summary>
+            Get Departments (Supervisor)
+            </summary>
+            <param name="PlantId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Absenteeism.Controllers.MasterController.GetStation(System.Int32,System.Int32)">
+            <summary>
+            Get Stations By DepartmenId (Supervisor)
+            </summary>
+            <param name="PlantId"></param>
+            <param name="DepartmentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Absenteeism.Controllers.MasterController.ForgotPasswordSendEmail(System.String)">
+            <summary>
+            Forgot Password
+            </summary>
+            <param name="UserNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Absenteeism.Controllers.MasterController.UpdatePassword(Absenteeism.Models.Input.InputCheckToken)">
+            <summary>
+            Update Password 
+            </summary>
+            <param name="inputCheckToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Absenteeism.Controllers.MasterController.ChangeCellMemberPassword(Absenteeism.Models.Input.InputChangePassword)">
+            <summary>
+            Change Cell Member Password (Cell Member)
+            </summary>
+            <param name="inputChangePassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Absenteeism.Controllers.MasterController.SendNotification(Absenteeism.Models.Notification.NotificationModel)">
+            <summary>
+            Send Notification(Cell Member) Currently Under Testing
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.CreateWorkHistory(Absenteeism.Models.Domain.tblWorkingHistory)">
+            <summary>
+            Create Work History
+            </summary>
+            <param name="inputCheckToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.DeleteWorkHistory(System.Int32)">
+            <summary>
+            Delete Work History
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.UpdateWorkHistory(Absenteeism.Models.Domain.tblWorkingHistory)">
+            <summary>
+            Update Work History
+            </summary>
+            <param name="inputCheckToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.GetWorkHistory(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Get Work History (CellMember)
+            </summary>
+            <param name="StartDate">(yyyy-MM-dd)</param>
+            <param name="EndDate">(yyyy-MM-dd)</param>
+            <param name="PlantId"></param>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.CreateDefect(Absenteeism.Models.Domain.tblDefect)">
+            <summary>
+            Create Defect
+            </summary>
+            <param name="inputtblDefect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.DeletetblDefect(System.Int32)">
+            <summary>
+            Delete tbl Defect
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.UpdatetblDefect(Absenteeism.Models.Domain.tblDefect)">
+            <summary>
+            Update TblDefect
+            </summary>
+            <param name="inputtblDefect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.GettblDefect(System.Int32)">
+            <summary>
+            Get tblDefect (Cell Member)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.CreateAvailability(Absenteeism.Models.Domain.tblAvailability)">
+            <summary>
+            Create tblAvailability
+            </summary>
+            <param name="inputtblAvailability"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.DeletetblAvailability(System.Int32)">
+            <summary>
+            Delete tblAvailability
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.UpdatetblAvailability(Absenteeism.Models.Input.UpdateAvailiability)">
+            <summary>
+            Update tblAvailability(Cell Member)
+            </summary>
+            <param name="inputtblAvailability">IsToday for today then 1 otherwise for tomorrow 0</param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.GettblAvailability(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Get tblAvailability
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.CreateCellMember(Absenteeism.Models.Domain.tblCellMemberStatus)">
+            <summary>
+            Create Cell Member
+            </summary>
+            <param name="inputtblCellMemberStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.DeleteCellMember(System.Int32)">
+            <summary>
+            Delete Cell Member
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.UpdatetblCellMemberStatus(Absenteeism.Models.Domain.tblCellMemberStatus)">
+            <summary>
+            Update tblCellMemberStatus 
+            </summary>
+            <param name="inputtblCellMemberStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.GettblCellMemberStatus(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Get tblCellMemberStatus (Supervisor)
+            </summary>
+            <param name="StartDate">(yyyy-MM-dd)</param>
+            <param name="EndDate">(yyyy-MM-dd)</param>
+            <param name="ShiftId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.CreateAllocation(Absenteeism.Models.Input.InputAllocation)">
+            <summary>
+            Create the Allocation(Supervisor)
+            </summary>
+            <param name="inputtblAllocation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.DeleteAllocation(System.Int32)">
+            <summary>
+            Delete allocation
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.UpdatetblAllocation(Absenteeism.Models.Domain.tblAllocation)">
+            <summary>
+            Update the allocation
+            </summary>
+            <param name="inputtblAllocation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.GettblAllocation(System.Int32,System.Int32,System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Get tblAllocation and Dashboard for (Supervisor)
+            </summary>
+            <param name="PlantId"></param>
+            <param name="UserId">Supervisor Id</param>
+            <param name="StartDate"></param>
+            <param name="EndDate"></param>
+            <param name="ShiftId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AbsenteeismAPI.Controllers.DashboardController.GettodayAllocationForCellMember(System.Int32,System.Int32)">
+            <summary>
+            Get Today Allocation for (Cell Member)
+            </summary>
+            <param name="PlantId"></param>
+            <param name="UserId">Cell Member Id</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
