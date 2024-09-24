@@ -1,1 +1,0 @@
-Data Source=tcp:mazpswaattsrv01-svr.database.windows.net,1433;Initial Catalog=mazpswaattdb01-db;Persist Security Info=False;User ID=swaatt-admin;Password=xpqqqFl)E?18;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30
